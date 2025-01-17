@@ -1,40 +1,36 @@
+import java.util.Scanner;
+
 public class Main {
 
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // 2 steps to creating a variable:
-        // 1. declaration
-        // 2. assignment
+        Scanner scanner = new Scanner(System.in);
 
-        int age = 33;
-        int year = 2025;
-        int quantity = 8;
-        int date = 17;
+        System.out.print("Enter your name: ");
 
-        double price = 200.99;
-        double cgpa = 5.7;
-        double weight = 90;
+        // next line method of scanner object reads
+        // a string of characters
+        String name = scanner.nextLine();
 
-        char grade = 'A';
-        char symbol = '!';
-        char currency = '$';
+        System.out.println("Hello " + name);
 
-        boolean isHandsome = true;
-        boolean isSmart = false;
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        System.out.println("Your age is " + age + " years.");
 
-        String name = "Fire Brigade";
-        String day = "Friday";
-        String month = "January";
+        System.out.print("What is your weight (in kgs)? : ");
+        double weight = scanner.nextDouble();
+        System.out.println(weight + " kgs.");
 
-        System.out.println("Appu is a part of the " + name);
-        System.out.println("Today is the " + date + " of " + month + " and the year is " + year + ".");
+        if (weight > 65.0) {
+            System.out.println("Go to the gym.");
+        } else {
+            System.out.println("Kuposhan hai aapko.");
+        }
 
-//        System.out.println(price);
-//        System.out.println(weight);
 
-//        System.out.println(age);
-//        System.out.println("The year is " + year);
+        scanner.close();
 
     }
 }
