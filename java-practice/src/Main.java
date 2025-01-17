@@ -10,6 +10,7 @@ public class Main {
         int age = 33;
         int year = 2025;
         int quantity = 8;
+        int date = 17;
 
         double price = 200.99;
         double cgpa = 5.7;
@@ -21,6 +22,13 @@ public class Main {
 
         boolean isHandsome = true;
         boolean isSmart = false;
+
+        String name = "Fire Brigade";
+        String day = "Friday";
+        String month = "January";
+
+        System.out.println("Appu is a part of the " + name);
+        System.out.println("Today is the " + date + " of " + month + " and the year is " + year + ".");
 
 //        System.out.println(price);
 //        System.out.println(weight);
