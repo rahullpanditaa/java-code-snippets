@@ -1,29 +1,38 @@
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class Main {
 
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        Random random = new Random();
+//        System.out.println(Math.PI);
+//        System.out.println(Math.E);
 
-        int number1;
-        int number2;
-        int number3;
+        double result;
 
-        double number;
-        number = random.nextDouble();
+        result = Math.pow(2, 3);
+        System.out.println(result);
 
-        boolean isHeads;
-        isHeads = random.nextBoolean();
+        result = Math.abs(-99);
+        System.out.println(result);
 
-        number1 = 1 + random.nextInt(100);
-        number2 = 1 + random.nextInt(100);
-        number3 = 1 + random.nextInt(100);
+        result = Math.sqrt(69);
+        System.out.println(result);
 
-        System.out.println(number1);
-        System.out.println(number2);
-        System.out.println(number3);
+        result = Math.round(3.14);
+        System.out.println(result);  // 3.0
+
+        result = Math.ceil(3.14);
+        System.out.println(result); // 4.0
+
+        result = Math.floor(3.99);
+        System.out.println(result); // 3.0
+
+        result = Math.max(10, 20);
+        System.out.println(result);
+
+        result = Math.min(23, 2);
+        System.out.println(result);
     }
 }
