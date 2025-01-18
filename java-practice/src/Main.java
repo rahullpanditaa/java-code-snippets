@@ -6,27 +6,21 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        boolean isStudent = true;
-        boolean isSenior = true;
-        double price = 320.99;
+        String name = "              Michael Scott               ";
 
-        if (isStudent) {
-            if (isSenior) {
-                System.out.println("You get a 10% student discount.");
-                System.out.println("You get a 20% senior discount.");
-                price *= 0.7;
+        int length = name.length();
+        char letter = name.charAt(0);
+        int index = name.indexOf("h");
+        int lastIndex = name.lastIndexOf("t");
 
-            } else {
-                System.out.println("You get a 10% student discount.");
-                price *= 0.9;
-            }
-        } else {
-            if (isSenior) {
-                System.out.println("You get a 20% senior discount.");
-                price *= 0.8;
-            }
-        }
+//        name = name.toUpperCase();
+//        name = name.toLowerCase();
 
-        System.out.printf("Price of ticket: ₹%.3f\n", price);
+        // trim leading and trailing whitespace
+        name = name.trim();
+//        name.isEmpty();
+
+        System.out.println(name);
+
     }
 }
