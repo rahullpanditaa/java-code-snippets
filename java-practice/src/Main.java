@@ -5,25 +5,17 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // Calculate the area of a rectangle
+        // Arithmetic Operators
 
-        double width = 0;
-        double height = 0;
-        double area = 0;
+        int x = 10;
+        int y = 3;
+        int z;
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the width: ");
-        width = scanner.nextDouble();
-
-        System.out.print("Enter the height: ");
-        height = scanner.nextDouble();
-
-        area = width * height;
-
-        System.out.println("The rectangle's area is: " + area + " cm^2");
-
-        scanner.close();
-
+//        z = x + y;
+//        z = x - y;
+//        z = x * y;
+//        z = x / y;
+        z = x % y;
+        System.out.println(z);
     }
 }
