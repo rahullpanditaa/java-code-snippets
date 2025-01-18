@@ -6,33 +6,24 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-//        System.out.println(Math.PI);
-//        System.out.println(Math.E);
+        // printf() - method used to format output
 
-        double result;
+        // %[flags][width][.precision][specifier-character]
 
-        result = Math.pow(2, 3);
-        System.out.println(result);
+        String name = "Lulu";
+        char firstLetter = 'L';
+        int age = 30;
+        double height = 60.5;
+        boolean isEmployed = true;
 
-        result = Math.abs(-99);
-        System.out.println(result);
+        System.out.printf("Hello %s\n" ,name);
+        System.out.printf("Name starts with %c\n", firstLetter);
+        System.out.printf("You are %d years old\n", age);
+        System.out.printf("You are %f inches tall\n", height);
+        System.out.printf("Employed: %b\n", isEmployed);
 
-        result = Math.sqrt(69);
-        System.out.println(result);
+        System.out.printf("%s is %d years old", name, age);
 
-        result = Math.round(3.14);
-        System.out.println(result);  // 3.0
 
-        result = Math.ceil(3.14);
-        System.out.println(result); // 4.0
-
-        result = Math.floor(3.99);
-        System.out.println(result); // 3.0
-
-        result = Math.max(10, 20);
-        System.out.println(result);
-
-        result = Math.min(23, 2);
-        System.out.println(result);
     }
 }
