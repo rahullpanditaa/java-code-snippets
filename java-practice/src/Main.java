@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -6,22 +7,24 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // enhanced switch = replacement to many else if statements
+        // array = collection of values of the same data type
+        String[] fruits = {"apple", "orange", "grapes"};
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter today's day: ");
-        String day = scanner.nextLine();
+//        fruits[0] = "banana";
 
-        switch(day) {
-            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> System.out.println("Weekday");
-//            case "Tuesday" -> System.out.println("Weekday");
-//            case "Wednesday" -> System.out.println("Weekday");
-//            case "Thursday" -> System.out.println("Weekday");
-//            case "Friday" -> System.out.println("Weekday");
-//            case "Saturday" -> System.out.println("Weekend");
-//            case "Sunday" -> System.out.println("Weekend");
-            default -> System.out.println(day + " is not a day.");
+//        int numOfFruits = fruits.length;
+
+//        System.out.println(fruits[0]);
+//        Arrays.sort(fruits);
+        Arrays.fill(fruits, "strawberry");
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
+
+//        for (int i = 0; i < fruits.length; i++) {
+//            System.out.println(fruits[i]);
+//        }
 
     }
 }
