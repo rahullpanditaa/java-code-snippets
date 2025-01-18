@@ -12,6 +12,12 @@ public class Main {
         int number2;
         int number3;
 
+        double number;
+        number = random.nextDouble();
+
+        boolean isHeads;
+        isHeads = random.nextBoolean();
+
         number1 = 1 + random.nextInt(100);
         number2 = 1 + random.nextInt(100);
         number3 = 1 + random.nextInt(100);
