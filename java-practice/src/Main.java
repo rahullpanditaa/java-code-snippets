@@ -5,20 +5,23 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // opens the input stream I guess?
-        // otherwise console is read only
+        // Calculate the area of a rectangle
+
+        double width = 0;
+        double height = 0;
+        double area = 0;
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter today's date: ");
-        int date = scanner.nextInt();
-        // get rid of newline character
-        scanner.nextLine();
+        System.out.print("Enter the width: ");
+        width = scanner.nextDouble();
 
-        System.out.print("Enter today's day: ");
-        String day = scanner.nextLine();
+        System.out.print("Enter the height: ");
+        height = scanner.nextDouble();
 
-        System.out.println("Today's date: " + date);
-        System.out.println("Today's day: " + day);
+        area = width * height;
+
+        System.out.println("The rectangle's area is: " + area + " cm^2");
 
         scanner.close();
 
