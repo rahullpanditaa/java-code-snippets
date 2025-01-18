@@ -6,21 +6,22 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        String name = "              Michael Scott               ";
+        // enhanced switch = replacement to many else if statements
 
-        int length = name.length();
-        char letter = name.charAt(0);
-        int index = name.indexOf("h");
-        int lastIndex = name.lastIndexOf("t");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter today's day: ");
+        String day = scanner.nextLine();
 
-//        name = name.toUpperCase();
-//        name = name.toLowerCase();
-
-        // trim leading and trailing whitespace
-        name = name.trim();
-//        name.isEmpty();
-
-        System.out.println(name);
+        switch(day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> System.out.println("Weekday");
+//            case "Tuesday" -> System.out.println("Weekday");
+//            case "Wednesday" -> System.out.println("Weekday");
+//            case "Thursday" -> System.out.println("Weekday");
+//            case "Friday" -> System.out.println("Weekday");
+//            case "Saturday" -> System.out.println("Weekend");
+//            case "Sunday" -> System.out.println("Weekend");
+            default -> System.out.println(day + " is not a day.");
+        }
 
     }
 }
