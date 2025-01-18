@@ -6,24 +6,27 @@ public class Main {
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // printf() - method used to format output
+        boolean isStudent = true;
+        boolean isSenior = true;
+        double price = 320.99;
 
-        // %[flags][width][.precision][specifier-character]
+        if (isStudent) {
+            if (isSenior) {
+                System.out.println("You get a 10% student discount.");
+                System.out.println("You get a 20% senior discount.");
+                price *= 0.7;
 
-        String name = "Lulu";
-        char firstLetter = 'L';
-        int age = 30;
-        double height = 60.5;
-        boolean isEmployed = true;
+            } else {
+                System.out.println("You get a 10% student discount.");
+                price *= 0.9;
+            }
+        } else {
+            if (isSenior) {
+                System.out.println("You get a 20% senior discount.");
+                price *= 0.8;
+            }
+        }
 
-        System.out.printf("Hello %s\n" ,name);
-        System.out.printf("Name starts with %c\n", firstLetter);
-        System.out.printf("You are %d years old\n", age);
-        System.out.printf("You are %f inches tall\n", height);
-        System.out.printf("Employed: %b\n", isEmployed);
-
-        System.out.printf("%s is %d years old", name, age);
-
-
+        System.out.printf("Price of ticket: ₹%.3f\n", price);
     }
 }
