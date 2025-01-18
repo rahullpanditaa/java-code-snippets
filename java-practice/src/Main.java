@@ -1,21 +1,23 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
     // the main method is needed for the program to run
     public static void main(String[] args) {
 
-        // Augmented assignment operators
+        Random random = new Random();
 
-        int x = 10;
-        int y = 2;
+        int number1;
+        int number2;
+        int number3;
 
-//        x += y;
-//        x -= y;
-//        x *= y;
-//        x /= y;       // integer division
-        x %= y;
+        number1 = 1 + random.nextInt(100);
+        number2 = 1 + random.nextInt(100);
+        number3 = 1 + random.nextInt(100);
 
-        System.out.println(x);
+        System.out.println(number1);
+        System.out.println(number2);
+        System.out.println(number3);
     }
 }
